@@ -21,6 +21,11 @@ body {
     webkit-tap-highlight-color: #ededeb;
 }
 
+.row {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
 hr {
     max-width: 80px;
     border-width: 3px;
@@ -97,9 +102,9 @@ p {
 
 section {
     padding: 70px 0;
-  border-bottom: 4px solid #D4A146; 
-  padding-bottom: 40px;
-  margin-bottom: 40px;
+    border-bottom: 4px solid #D4A146; 
+    padding-bottom: 40px;
+    margin-bottom: 40px;
 }
 
 aside {
@@ -310,9 +315,9 @@ header .header-content .inner p {
 
 @media screen and (max-width: 480px) {
     header {
-        min-height: 50vh;
-        padding: 20px 10px;
-        background-position: 74% 34px;
+        min-height: 60vh;
+        padding: 10px 10px;
+        background-position: 50% 50px;
     }
 
     header h1 {
@@ -590,17 +595,17 @@ img::-moz-selection {
 }
 
 .carrosel {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 2px 2px 5px rgba(211, 159, 69, 0.3);
+    width: 100%;
+    max-width: 850px;
+    aspect-ratio: 3 / 2;
     overflow: hidden;
-    height: 500px;
-    width: 500px;
-    margin: 0 auto;
+    margin: 40px auto;
+    border-radius: 20px;
+    background: #f5f5f500;
     position: relative;
     cursor: grab;
     user-select: none;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
 .carrosel.dragging {
@@ -609,15 +614,22 @@ img::-moz-selection {
 
 .img-container {
     display: flex;
-    width: max-content;
+    transition: transform 0.5s ease-in-out;
     height: 100%;
-    transition: transform 0.4s ease;
 }
 
-img {
-    object-fit: contain; 
-    width: 100%;
+.img-container img {
+    width: 100%; /* agora a imagem ocupa 100% da .carrosel */
     height: 100%;
+    object-fit: contain;
+    flex-shrink: 0; /* impede a imagem de encolher */
+    border-radius: 15px;
+    background-color: #ffffff00;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+}
+
+.img-container img:hover {
+    transform: scale(1.02);
 }
 
 @media (max-width: 768px) {
