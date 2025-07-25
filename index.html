@@ -133,79 +133,75 @@
     </section>
     <section class="no-padding" id="four">
         <div class="row">
-            <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4">
-                <h2 class="text-center text-primary" style="font-size:40px">Informações</h2>
+            <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-6 col-md-offset-3">
+                <h2 class="text-center margin-top-0 text-primary" style="font-size:40px">Informações</h2>
                 <hr>
-                <div class="media wow fadeInRight">
-                    <div class="text-center mb-4">
-                        <p style="font-size: 20px; color: #D4A146;">
+                <div style="border: 1px solid #D4A146; border-radius: 12px; padding: 1.5em; margin-bottom: 2em;">
+                    <div class="text-center">
+                        <p style="font-size: 1.1em; color: #D4A146;">
                             Se desejar, você pode nos enviar um valor via PIX utilizando o QR Code abaixo:
                         </p>
                         <div id="qrcode" class="my-3" style="text-align: center;"></div>
-                        <p style="font-size: 18px; color: #D4A146;">
+                        <p style="font-size: 1.05em; color: #D4A146;">
                             Ou copie e cole essa chave PIX:
-                            <br>
-                        <div style="margin-bottom: 15px;">
-                            <strong id="pixChave" style="word-break: break-all; font-size: 18px; color: #D4A146;">
+                        </p>
+                        <div style="margin-bottom: 1em;">
+                            <strong id="pixChave" style="word-break: break-all; font-size: 1em; color: #D4A146;">
                                 49f0b897-c971-4e44-a769-022320a34d5e
                             </strong><br>
                             <button onclick="copiarChavePIX()"
-                                style="margin-top: 10px; background-color: #D4A146; color: white; border: none; padding: 8px 15px; border-radius: 5px; font-size: 18px;">
+                                style="margin-top: 10px; background-color: #D4A146; color: white; border: none; padding: 10px 20px; border-radius: 6px; font-size: 1em;">
                                 Copiar chave PIX
                             </button>
                             <p id="mensagemCopiado"
-                                style="color: green; font-size: 16px; display: none; margin-top: 8px;">Chave copiada! ✅
+                                style="color: green; font-size: 1em; display: none; margin-top: 8px;">
+                                Chave copiada! ✅
                             </p>
                         </div>
-                        </p>
                     </div>
-                    <div class="text-center mb-4">
-                        <div style="font-size: 40px; color: #ff0000;">
-                            <i class="icon-lg ion-heart"></i>
-                        </div>
-                    </div>
-                    <h3 class="text-center" style="font-size: 26px; color: #D4A146; margin-bottom: 15px;">⬇︎ Lista de
+                </div>
+                <div style="border: 1px solid #D4A146; border-radius: 12px; padding: 1.5em; margin-bottom: 2em;">
+                    <h3 class="text-center" style="font-size: 1.5em; color: #D4A146; margin-bottom: 1em;">⬇︎ Lista de
                         Presente ⬇︎</h3>
-                    <div class="text-center mb-4">
+                    <div class="text-center">
                         <a href="https://www.mercadolivre.com.br/presentes/casamento-ruedas-ni6e8" target="_blank"
                             style="
-                     display: inline-block;
-                     font-size: 20px;
-                     color: #ffffff;
-                     background-color: #D4A146;
-                     padding: 12px 20px;
-                     border-radius: 8px;
-                     text-decoration: none;
-                     font-weight: bold;
-                     box-shadow: 0 0 10px rgba(240, 243, 37, 0.6);
-                     transition: transform 0.2s ease, box-shadow 0.2s ease;
-                     cursor: pointer;
-                   " onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0 0 15px rgba(240,243,37,0.9)'"
+              display: inline-block;
+              font-size: 1.1em;
+              color: #ffffff;
+              background-color: #D4A146;
+              padding: 12px 20px;
+              border-radius: 8px;
+              text-decoration: none;
+              font-weight: bold;
+              box-shadow: 0 0 10px rgba(240, 243, 37, 0.6);
+              transition: transform 0.2s ease, box-shadow 0.2s ease;
+              cursor: pointer;
+            " onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0 0 15px rgba(240,243,37,0.9)'"
                             onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 0 10px rgba(240,243,37,0.6)'">
                             🎁 Clique aqui para acessar o site com a lista de presente!
                         </a>
                     </div>
                 </div>
-                <hr>
             </div>
         </div>
-        <div class="text-center" style="margin-top: 40px;">
-            <h3 class="text-primary" style="font-size: 30px;">Confirmar Presença</h3>
+        <div class="text-center"
+            style="width: 94%; max-width: 500px; margin: 0 auto 2em auto; border: 1px solid #D4A146; border-radius: 12px; padding: 2em;">
+            <h3 class="text-primary" style="font-size: 1.6em; margin-bottom: 1em;">Confirmar Presença</h3>
             <input type="text" id="nomeConvidado" class="form-control" placeholder="Digite seu nome"
-                style="max-width: 300px; margin: 10px auto;">
+                style="width: 100%; max-width: 300px; margin: 0 auto 1em;">
             <button onclick="confirmarPresenca()"
-                style="background-color: #D4A146; color: #FFFFFF; border: none; padding: 10px 20px; border-radius: 4px; font-size: 18px;">
+                style="background-color: #D4A146; color: #FFFFFF; border: none; padding: 10px 20px; border-radius: 6px; font-size: 1em;">
                 Confirmar
             </button>
 
-            <p id="mensagemConfirmacao" style="margin-top: 15px; font-size: 18px; color: green; display: none;">
+            <p id="mensagemConfirmacao" style="margin-top: 1em; font-size: 1em; color: green; display: none;">
                 Presença confirmada com sucesso!
             </p>
 
-            <p id="mensagemErro" style="margin-top: 15px; font-size: 18px; color: red; display: none;">
+            <p id="mensagemErro" style="margin-top: 1em; font-size: 1em; color: red; display: none;">
                 Ocorreu um erro. Tente novamente.
             </p>
-            <br><br>
         </div>
     </section>
     <section class="no-padding" id="five">
@@ -218,7 +214,8 @@
                     <p style="font-size:20px; color: #D4A146;">
                         Queremos que todos se sintam à vontade e elegantes neste dia tão especial.<br><br>
                         <strong>Traje recomendado:</strong> Esporte fino.<br><br>
-                        <strong>Mulheres: </strong>vestido leve, saia midi, etc. (<span style="color: red;"><strong>EVITE AMARELO</strong></span>).
+                        <strong>Mulheres: </strong>vestido leve, saia midi, etc. (<span
+                            style="color: red;"><strong>EVITE AMARELO</strong></span>).
                     </p>
                     <div class="image-grid"
                         style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin-top: 20px; justify-items: center;">
